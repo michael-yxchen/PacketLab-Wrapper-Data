@@ -1,0 +1,8 @@
+$ host www.example.com 8.8.8.8
+Using domain server:
+Name: 8.8.8.8
+Address: 8.8.8.8#53
+Aliases: 
+
+www.example.com has address 93.184.216.34
+www.example.com has IPv6 address 2606:2800:220:1:248:1893:25c8:1946

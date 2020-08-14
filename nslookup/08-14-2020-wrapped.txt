@@ -1,0 +1,40 @@
+$ pktlab_ld_libc nslookup www.example.com 8.8.8.8
+init wrapper
+> Got measurement endpoint connection from 127.0.0.1.
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 3
+bytes recved: 0 bytes delivered: 0
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+WARN: sendmsg ignored cmsg
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 7
+bytes recved: 0 bytes delivered: 0
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+Name:   www.example.com
+Address: 93.184.216.34
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 7
+bytes recved: 49 bytes delivered: 49
+buf size: 2048 buf length: 0
+-------------socket summary end---------------
+Name:   www.example.com
+Address: 2606:2800:220:1:248:1893:25c8:1946
+-------------socket summary---------------
+sktid: 1 intf: 0 tidx: 1 fd: 7
+bytes recved: 61 bytes delivered: 61
+buf size: 2048 buf length: 0
+-------------socket summary end---------------
+
+Destroy wrapper
+---->PACKETLAB WRAPPER SUMMARY BEGIN<-----
+Total bytes sent: 66
+Total bytes received: 110
+No. of RTT data points: 4
+Average EC-ME RTT: 0.046500 msec
+---->PACKETLAB WRAPPER SUMMARY END<-----

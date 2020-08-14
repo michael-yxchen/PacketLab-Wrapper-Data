@@ -1,0 +1,11 @@
+$ wget http://speedtest.tele2.net/100MB.zip
+--2020-08-14 13:32:43--  http://speedtest.tele2.net/100MB.zip
+Resolving speedtest.tele2.net (speedtest.tele2.net)... 90.130.70.73, 2a00:800:1010::1
+Connecting to speedtest.tele2.net (speedtest.tele2.net)|90.130.70.73|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 104857600 (100M) [application/zip]
+Saving to: ‘100MB.zip.3’
+
+100MB.zip.3                 100%[==========================================>] 100.00M  24.7MB/s    in 4.7s    
+
+2020-08-14 13:32:48 (21.2 MB/s) - ‘100MB.zip.3’ saved [104857600/104857600]

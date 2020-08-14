@@ -1,0 +1,31 @@
+$ pktlab_ld_libc wget http://speedtest.tele2.net/100MB.zip
+--2020-08-14 13:32:02--  http://speedtest.tele2.net/100MB.zip
+Resolving speedtest.tele2.net (speedtest.tele2.net)... init wrapper
+> Got measurement endpoint connection from 127.0.0.1.
+-------------socket summary---------------
+sktid: 0 intf: 1 tidx: 0 fd: 3
+bytes recved: 53 bytes delivered: 53
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+90.130.70.73
+Connecting to speedtest.tele2.net (speedtest.tele2.net)|90.130.70.73|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 104857600 (100M) [application/zip]
+Saving to: ‘100MB.zip.2’
+
+100MB.zip.2                 100%[==========================================>] 100.00M  24.7MB/s    in 4.8s    
+
+2020-08-14 13:32:09 (20.8 MB/s) - ‘100MB.zip.2’ saved [104857600/104857600]
+
+Destroy wrapper
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 3
+bytes recved: 104857847 bytes delivered: 104857847
+buf size: 4194304 buf length: 0
+-------------socket summary end---------------
+---->PACKETLAB WRAPPER SUMMARY BEGIN<-----
+Total bytes sent: 192
+Total bytes received: 104857900
+No. of RTT data points: 5
+Average EC-ME RTT: 0.058600 msec
+---->PACKETLAB WRAPPER SUMMARY END<-----

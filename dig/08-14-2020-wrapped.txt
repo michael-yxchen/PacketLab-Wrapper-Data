@@ -1,0 +1,46 @@
+$ pktlab_ld_libc dig www.example.com @8.8.8.8
+init wrapper
+> Got measurement endpoint connection from 127.0.0.1.
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 3
+bytes recved: 0 bytes delivered: 0
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+WARN: sendmsg ignored cmsg
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 7
+bytes recved: 0 bytes delivered: 0
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+
+; <<>> DiG 9.11.3-1ubuntu1.12-Ubuntu <<>> www.example.com @8.8.8.8
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24719
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.example.com.               IN      A
+
+;; ANSWER SECTION:
+www.example.com.        21457   IN      A       93.184.216.34
+
+;; Query time: 88 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Fri Aug 14 13:38:40 EDT 2020
+;; MSG SIZE  rcvd: 60
+
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 7
+bytes recved: 60 bytes delivered: 60
+buf size: 2048 buf length: 0
+-------------socket summary end---------------
+Destroy wrapper
+---->PACKETLAB WRAPPER SUMMARY BEGIN<-----
+Total bytes sent: 56
+Total bytes received: 60
+No. of RTT data points: 2
+Average EC-ME RTT: 0.067000 msec
+---->PACKETLAB WRAPPER SUMMARY END<-----

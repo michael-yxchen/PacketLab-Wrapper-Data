@@ -1,0 +1,28 @@
+$ ntpdate -d time-a-g.nist.gov
+14 Aug 13:34:16 ntpdate[25342]: ntpdate 4.2.8p10@1.3728-o (1)
+Looking for host time-a-g.nist.gov and service ntp
+129.6.15.28 reversed to time-a-g.nist.gov
+host found : time-a-g.nist.gov
+transmit(129.6.15.28)
+receive(129.6.15.28)
+transmit(129.6.15.28)
+receive(129.6.15.28)
+transmit(129.6.15.28)
+receive(129.6.15.28)
+transmit(129.6.15.28)
+receive(129.6.15.28)
+server 129.6.15.28, port 123
+stratum 1, precision -29, leap 00, trust 000
+refid [NIST], delay 0.05685, dispersion 0.00044
+transmitted 4, in filter 4
+reference time:    e2e1495c.00000000  Fri, Aug 14 2020 13:33:16.000
+originate timestamp: e2e1499f.6f6c21b3  Fri, Aug 14 2020 13:34:23.435
+transmit timestamp:  e2e1499e.bf54462d  Fri, Aug 14 2020 13:34:22.747
+filter delay:  0.05685  0.05688  0.05859  0.05904 
+         0.00000  0.00000  0.00000  0.00000 
+filter offset: 0.671775 0.671974 0.670646 0.671148
+         0.000000 0.000000 0.000000 0.000000
+delay 0.05685, dispersion 0.00044
+offset 0.671775
+
+14 Aug 13:34:22 ntpdate[25342]: step time server 129.6.15.28 offset 0.671775 sec

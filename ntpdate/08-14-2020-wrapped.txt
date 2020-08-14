@@ -1,0 +1,67 @@
+$ pktlab_ld_libc ntpdate -d time-a-g.nist.gov
+init wrapper
+> Got measurement endpoint connection from 127.0.0.1.
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 3
+bytes recved: 0 bytes delivered: 0
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+14 Aug 13:36:47 ntpdate[12634]: ntpdate 4.2.8p10@1.3728-o (1)
+Looking for host time-a-g.nist.gov and service ntp
+-------------socket summary---------------
+sktid: 0 intf: 1 tidx: 0 fd: 3
+bytes recved: 51 bytes delivered: 51
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+-------------socket summary---------------
+sktid: 0 intf: 1 tidx: 0 fd: 3
+bytes recved: 73 bytes delivered: 73
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+129.6.15.28 reversed to time-a-g.nist.gov
+-------------socket summary---------------
+sktid: 0 intf: 1 tidx: 0 fd: 3
+bytes recved: 51 bytes delivered: 51
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+host found : time-a-g.nist.gov
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 3
+bytes recved: 0 bytes delivered: 0
+buf size: 0 buf length: 0
+-------------socket summary end---------------
+transmit(129.6.15.28)
+receive(129.6.15.28)
+transmit(129.6.15.28)
+receive(129.6.15.28)
+transmit(129.6.15.28)
+receive(129.6.15.28)
+transmit(129.6.15.28)
+receive(129.6.15.28)
+server 129.6.15.28, port 123
+stratum 1, precision -29, leap 00, trust 000
+refid [NIST], delay 0.05664, dispersion 0.00011
+transmitted 4, in filter 4
+reference time:    e2e14a26.00000000  Fri, Aug 14 2020 13:36:38.000
+originate timestamp: e2e14a36.92bea234  Fri, Aug 14 2020 13:36:54.573
+transmit timestamp:  e2e14a35.e2a690d7  Fri, Aug 14 2020 13:36:53.885
+filter delay:  0.05673  0.05678  0.05678  0.05664 
+         0.00000  0.00000  0.00000  0.00000 
+filter offset: 0.672565 0.672376 0.672396 0.672354
+         0.000000 0.000000 0.000000 0.000000
+delay 0.05664, dispersion 0.00011
+offset 0.672354
+
+14 Aug 13:36:53 ntpdate[12634]: step time server 129.6.15.28 offset 0.672354 sec
+Destroy wrapper
+-------------socket summary---------------
+sktid: 0 intf: 0 tidx: 0 fd: 3
+bytes recved: 192 bytes delivered: 192
+buf size: 2048 buf length: 0
+-------------socket summary end---------------
+---->PACKETLAB WRAPPER SUMMARY BEGIN<-----
+Total bytes sent: 304
+Total bytes received: 367
+No. of RTT data points: 18
+Average EC-ME RTT: 0.040056 msec
+---->PACKETLAB WRAPPER SUMMARY END<-----
